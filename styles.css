@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 5% 0 0 0;
+}
+
+.container > .list {
+  width: 45%;
+}
+
+.container > .list > .contents {
+  display: flex;
+  padding: 1.1rem;
+  margin: 0 0 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.container > .list > .contents img {
+  width: 8%;
+}
+
+.container > .list > .contents h3 {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container > .photo {
+  width: 45%;
+}
+
+.container > .photo img {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .container > .list {
+    width: 100%;
+  }
+
+  .container > .photo {
+    width: 100%;
+  }
+
+  .container > .list > .contents h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .container > .list {
+    width: 100%;
+  }
+
+  .container > .list > .contents {
+    justify-content: space-between;
+    align-self: normal;
+  }
+
+  .container > .photo {
+    width: 100%;
+  }
+
+  .container > .list > .contents h3 {
+    font-size: 1.4rem;
+  }
+}
